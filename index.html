@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><img src="./images/bliss logo.jpg" alt=""></a>
+        <nav class="navbar">
+            <a href="#Home  " class="link">Home</a>
+            <a href="#about" class="link">About</a>
+            <a href="menu.html" class="link">Menu</a>
+            <a href="#review" class="link">Review</a>
+            <a href="#contact" class="link">Contact</a>
+            <a href="#blogs" class="link">Blogs</a>   
+        </nav>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <!--Home section starts here-->
+    
+    <section class="Home" id="Home">
+         <div class="content">
+            <h1 class="shop-name">Bean Bliss</h1>
+            <h3>fresh coffee in <br> the morning</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Eum cumque dolorum ea non nihil, delectus laudantium </p>
+            
+         </div>
+    </section>
+    <!--End of home section-->
+<!--About section starts here-->
+    <section class="about" id="about">
+        <h1 class="heading"><span>about</span> us </h1>
+        <div class="row">
+            <div class="image"> 
+                <img src="./images/aboutImg.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Welcome to our coffee shop!</h3>
+                <p>We are passionate about serving the finest coffee to our customers. Our dedicated team strives to create the perfect cup of coffee every time. <br>Learn about our story, and discover why we are the best choice for coffee enthusiasts.</p>
+                <a href="about.html" class="btn">Learn more</a>
+            </div>
+        </div> 
+    </section>
+<!--About section ends here-->
+
+<!-- review section starts here -->
+<section class="review" id="review">
+    <h1 class="heading">customer's <span>review</span></h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="" alt="" class="quote">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, aspernatur?</p>
+            <img src="./images/review photos/John-doe.jpg" alt="" class="user">
+            <h3>John Doe</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+        <div class="box">
+            <img src="" alt="" class="quote">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, aspernatur?</p>
+            <img src="./images/review photos/John-doe.jpg" alt="" class="user">
+            <h3>John Doe</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+        <div class="box">
+            <img src="" alt="" class="quote">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, aspernatur?</p>
+            <img src="./images/review photos/maria.jpg" alt="" class="user">
+            <h3>John Doe</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+    </div>
+</section>
+<!-- review section ends here -->
+
+<!-- contact section starts here -->
+<section class="contact" id="contact">
+    <h1 class="heading">Contact <span>us</span></h1>
+    <div class="row">
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212043.4949070693!2d35.270619392395034!3d33.85926181313304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f17dbb926f555%3A0x8d216221401deca0!2sDunkin%E2%80%99%20Mansouriyeh!5e0!3m2!1sen!2slb!4v1684628419223!5m2!1sen!2slb"
+             allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form action="">
+                <h3>get in touch</h3>
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" name="" id="name" placeholder="name">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" name="" id="email" placeholder="something@gmail.com">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="text" name="" id="" placeholder="phone number">
+                </div>
+                <input type="submit" value="contact now" class="btn" onclick="validateForm()">
+            </form>
+    </div>
+</section>
+<!-- contact section ends here -->
+
+<!-- blogs section starts here -->
+
+<section class="blogs" id="blogs">
+    <h1 class="heading">Our <span>blogs</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="./images/blogs3.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">tasty and refreshing coffee</a>
+                <span>by admin / 21st may 2023</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, autem.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="./images/blogs1.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">tasty and refreshing coffee</a>
+                <span>by admin / 21st may 2023</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, autem.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="./images/blogs2.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">tasty and refreshing coffee</a>
+                <span>by admin / 21st may 2023</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, autem.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- blogs section ends here -->
+        
+<!-- footer section starts here -->
+
+<section class="footer">
+    <div class="share">
+        <a href="https//:www.facebook.com" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+    <div class="links">
+        <a href="#" class="link" onclick="scrollToTop()">Home</a>
+        <a href="#about" class="link">About</a>
+        <a href="menu.html" class="link">Menu</a>
+        <a href="#review" class="link">Review</a>
+        <a href="#contact" class="link">Contact</a>
+        <a href="#blogs" class="link">Blogs</a>
+    </div>
+    <div class="credit">copyright&copy;, <span>All rights reserved.</span> </div>
+</section>
+
+
+<!-- footer section ends here -->
+            
+</body>
+<script src="script.js"></script>
+</html>

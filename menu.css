@@ -1,0 +1,124 @@
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+
+.Heading{
+  color: #fff;
+  padding-bottom: 40px;
+  padding-left: 24px;
+  font-size: 32px;
+  margin-top: 40px;
+}
+.content .name{
+  color: #fff;
+  padding-top: 40px;
+  padding-left: 5px;
+  font-size: 16px;
+  padding-top: 20px;
+  text-align: center;
+  
+}
+  .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    z-index: 20;
+    box-shadow: 10px 10px 53px 0px rgba(0, 0, 0, 0.49);
+  }
+  .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 30px;
+    /* border: 1px solid red; */
+  }
+  .card-wrapper {
+    position: relative;
+    /* border: 1px solid red; */
+    width: 245px;
+    height: 245px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 10px 10px 53px 0px rgba(0, 0, 0, 0.49);
+  }
+  .card-wrapper:hover .image {
+    filter: blur(1.4px);
+    transform: scale(1.5);
+    overflow: hidden;
+    transition: all 0.3s linear;
+    box-shadow: inset -6px -1px 32px 0px rgba(0, 0, 0, 0.75);
+  }
+  .card-wrapper:hover .card-bottom {
+    transform: translate(0%, -50%);
+    transition: all 0.8s ease;
+    background-color: rgba(110, 122, 92, 0.7);
+  }
+  
+  .card-top {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .card-bottom {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    background-color: rgba(110, 122, 92, 0);
+    padding: 100px 20px;
+    color: #fff;
+    transform: translate(100%, -50%);
+  }
+  .top-text {
+    color: var(--main-color);
+    font-size: 16px;
+    padding-bottom: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: underline;
+  }
+  .bottom-text {
+    padding-top: 5px;
+    font-size: 15px;
+  }
+  .button {
+    position: relative;
+    display: block;
+    outline: none;
+    cursor: pointer;
+    margin-top: 25px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f8961e;
+    color: #fff;
+    padding: 5px 20px;
+  }
+  @media (max-width: 768px){
+    .Heading{
+      font-size: 20px;
+    }
+    .flex-container{
+      justify-content: center;
+    }
+  }
+  @media (max-width: 450px){
+    .content .name{
+      font-size: 10px;
+    }
+    .card-wrapper{
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 150px;
+      height: 150px;
+    }
+  }
